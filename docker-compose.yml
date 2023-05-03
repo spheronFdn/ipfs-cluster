@@ -60,8 +60,8 @@ services:
           # The cluster swarm port would need  to be exposed if this container
           # was to connect to cluster peers on other hosts.
           # But this is just a testing cluster.
-          # - "9095:9095" # Cluster IPFS Proxy endpoint
-          # - "9096:9096" # Cluster swarm endpoint
+          - "9095:9095" # Cluster IPFS Proxy endpoint
+          - "9096:9096" # Cluster swarm endpoint
     volumes:
       - ./compose/cluster0:/data/ipfs-cluster
 
